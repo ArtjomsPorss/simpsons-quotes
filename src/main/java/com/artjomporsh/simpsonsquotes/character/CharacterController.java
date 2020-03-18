@@ -9,6 +9,7 @@ import java.util.List;
 
 @Controller
 public class CharacterController {
+
     @GetMapping(path = "/")
     public String home(){
         return "index.html";

@@ -1,45 +1,45 @@
 package com.artjomporsh.simpsonsquotes.character;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
-
-import java.util.List;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-
+@WebMvcTest(CharacterController.class)
 public class TestCharacterController {
 
     @Autowired
-    private CharacterController characterController;
-    @Autowired
-    private TestRestTemplate testRestTemplate;
+    private MockMvc mockMvc;
 
-    @LocalServerPort
-    private int port;
+    @MockBean
+    private SimpsonsCharacterRepository repository;
 
     @Test
-    public void testIsControllerLoadedInContext(){
-        assertThat(characterController)
+    public void testIsControllerLoadedInContext() {
+        assertThat(mockMvc)
                 .withFailMessage("CharacterController is expected to be present in ApplicationContext but is not there.")
                 .isNotNull();
     }
 
     @Test
-    public void testHomePageIsReturned(){
-        assertThat(this.characterController.home()).withFailMessage("index.html is expected to be returned").contains("index.html");
+    public void testHomePageIsReturned() throws Exception {
+        this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk()).andExpect(forwardedUrl("index.html"));
     }
 
     @Test
-    public void testIsApplicationRunningOnPort8083(){
-        assertThat(this.testRestTemplate.getForObject("http://localhost:8083/characters", List.class))
-                .withFailMessage("Call to port 8083 for characters URL must return a non-null result").isNotNull();
+    public void testCharactersReturnsJsonArray() throws Exception {
+        this.mockMvc.perform(get("/characters"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON));
     }
 
 

@@ -1,0 +1,11 @@
+.card-img-top {
+    object-fit: contain;
+    max-height:14rem;
+    width:auto;
+    height:auto
+}
+
+.card {
+    width: 18rem;
+    height: 24rem;
+}

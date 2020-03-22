@@ -69,3 +69,92 @@ INSERT INTO SIMPSONS_CHARACTER VALUES (
   'https://vignette.wikia.nocookie.net/simpsons/images/9/95/Maude_Flanders.png/revision/latest/scale-to-width-down/286?cb=20170923223722',
   49
 );
+
+
+
+-- insert quotes
+INSERT INTO simpsons_quotes VALUES (
+'59edff64d9be8f7aa11e0c44',
+'59edee68706374dfa957842f',
+'Wait a minute. Bart’s teacher is named ‘Krabappel’? Oh, I’ve been calling her ‘Crandall.’ Why didn’t anyone tell me? Ohhh, I’ve been making an idiot out of myself!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6492d619b4a933a56b',
+'59edee68706374dfa957842f',
+'Now we play the waiting game…Ahh, the waiting game sucks. Let’s play Hungry Hungry Hippos!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6477ac8539e526682b',
+'59edee689509e51682ff8e02',
+'Go out on a Tuesday? Who am I, Charlie Sheen?');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff647cf388e225bc5f4e',
+'59edee689509e51682ff8e02',
+'I brought you a tuna sandwich. They say it''s brain food. I guess because there''s so much dolphin in it, and you know how smart they are.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff64ac4dccc4b0e35784',
+'59edee68eff3f80413c136f8',
+'I’d be mortified if someone ever made a lousy product with the Simpson name on it.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6419f9d6df24d593fe',
+'59edee68eff3f80413c136f8',
+'You monster! You monster!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6403042a54f6038044',
+'59edee683406c7834ee7cdd8',
+'There’s only one thing to do at a moment like this: strut!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff643d4737e47c71835c',
+'59edee683406c7834ee7cdd8',
+'Aren’t we forgetting the true meaning of Christmas: the birth of Santa.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff641b4c1f62aebe1e4d',
+'59edee68b4b101bef064bf11',
+'I made a Pigeon-rat.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff643fbeca90867aa34d',
+'59edee68b4b101bef064bf11',
+'Am I? Well, perhaps we''re all a little crazy. I know I am. I went mad after they tore us apart, but I''ll be sane… once I sew us back together.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6494f9aef192ef4813',
+'59edee68874eb2fa23678344',
+'Diddly');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff64e6597a07e8e5dd33',
+'59edee68874eb2fa23678344',
+'I give you the jury of the damned. Benedict Arnold, Lizzie Borden, Richard Nixon...');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff6458b6a68631660120',
+'59edee68efd448eefb265420',
+'We just move one space at a time. It''s less fun that way.');
+
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff646c740f1218a30a06',
+'59edee68efd448eefb265420',
+'Thank you, door!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff644abadfc108cac2a6',
+'59edee68ea392a3947485d41',
+'Daddy says dice are wicked.');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff64b5988eeae9953b59',
+'59edee68ea392a3947485d41',
+'Thank you, door!');
+
+INSERT INTO simpsons_quotes VALUES (
+'59edff64fd7790417d74b3a1',
+'59edee682c7acf7bfac7e66b',
+'Oh, I don''t care for the speed, but I can''t get enough of that safety gear - helmets, roll bars, caution flags...');

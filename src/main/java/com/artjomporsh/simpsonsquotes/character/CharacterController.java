@@ -24,5 +24,4 @@ public class CharacterController {
         return characterRepo.findAll();
     }
 
-
 }

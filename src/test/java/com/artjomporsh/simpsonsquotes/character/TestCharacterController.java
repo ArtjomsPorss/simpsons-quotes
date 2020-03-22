@@ -23,7 +23,7 @@ public class TestCharacterController {
     private SimpsonsCharacterRepository repository;
 
     @Test
-    public void testIsControllerLoadedInContext() {
+    public void testIsControllerLoaded() {
         assertThat(mockMvc)
                 .withFailMessage("CharacterController is expected to be present in ApplicationContext but is not there.")
                 .isNotNull();

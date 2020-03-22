@@ -6,15 +6,18 @@ $( document ).ready(function(){
         });
     }
 
-    addCharacterCard = function(characterData) {
-        let card = `<div class="card">
-            <img src="` + characterData.picture + `" class="card-img-top" alt="` + characterData.firstName + " " + characterData.lastName + `">
+    addCharacterCard = function({picture, firstName, lastName, age}) {
+        let card = `
+        <div class="col">
+            <div class="card">
+            <img src="${picture}" class="card-img-top" alt="${firstName} ${lastName}">
               <div class="card-body">
-                <h5 class="card-title">` + characterData.firstName + " " + characterData.lastName + `</h5>
-                <p class="card-text">` + characterData.age + " years old" + `</p>
+                <h5 class="card-title">${firstName} ${lastName}</h5>
+                <p class="card-text">${age} years old</p>
                 <a href="#" class="btn btn-primary">View Quotes</a>
               </div>
-            </div>`
+          </div>
+        </div>`
 
         $("#cardContainer").append(card);
     }

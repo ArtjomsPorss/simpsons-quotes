@@ -17,13 +17,13 @@ public class QuotesController {
 
     @GetMapping(path = "/quotes/{id}")
     public @ResponseBody List<Quote> findQuotesForCharacter(@PathVariable("id") String characterId) {
-        return quotesRepository.findByCharacterId(characterId);
+        return quotesRepository.findByCharacter(characterId);
     }
 
     @PostMapping("/saveQuote")
     public void saveQuote(@RequestBody Quote quote) {
-        int hash = quote.hashCode();
-        quote.set_id(""+hash);
+//        int hash = quote.hashCode();
+//        quote.set_id(""+hash);
         LOG.info(quote.toString());
         quotesRepository.save(quote);
     }

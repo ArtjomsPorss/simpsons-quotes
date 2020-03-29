@@ -1,9 +1,12 @@
 package com.artjomporsh.simpsonsquotes.quotes;
 
+import org.springframework.data.mongodb.repository.MongoRepository;
+
 import java.util.List;
 
-public interface QuotesRepository {
-    List<Quote> findByCharacterId(String id);
+public interface QuotesRepository extends MongoRepository<Quote, String> {
 
-    void save (Quote quote);
+    List<Quote> findByCharacter(String character);
+
+    Quote insert (Quote quote);
 }

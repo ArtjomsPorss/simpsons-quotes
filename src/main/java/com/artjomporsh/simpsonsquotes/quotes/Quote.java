@@ -2,17 +2,12 @@ package com.artjomporsh.simpsonsquotes.quotes;
 
 import com.artjomporsh.simpsonsquotes.common.BaseEntity;
 import lombok.Data;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Entity
-@Table(name = "simpsons_quotes")
+@Document(collection = "quotes")
 public class Quote extends BaseEntity {
-    @Column(name = "character")
+
     String character;
-    @Column(name = "quote")
-    String quote;
+    String phrase;
 }

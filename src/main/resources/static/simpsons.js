@@ -25,12 +25,12 @@ $( document ).ready(function(){
         $('#quotesModalCenterTitle').text(`${character.firstName} ${character.lastName} Quotes`)
         // add quotes to modal
         $('#modalQuoteContainer').empty();
-        // TODO if nothing in response, display empty modal. On the modal show text that no messages found
         quotes.forEach(function(quote, key, map) {
+            // TODO if nothing in response, display empty modal. On the modal show text that no messages found
             let quoteRow =
                 `<div class="row" id="${quote._id}" character="${quote.character}">
                     <div class="col-lg-10 col-md-8 col-sm-6 font-italic" name="quote">
-                        ${quote.quote}
+                        ${quote.phrase}
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="btn-group" role="group">
@@ -91,7 +91,7 @@ $( document ).ready(function(){
 
         data = {};
         data._id = null;
-        data.quote = newQuote;
+        data.phrase = newQuote;
         data.character = characterId;
 
         $.ajax({

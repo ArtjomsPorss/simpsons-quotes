@@ -33,3 +33,5 @@ build/
 *.db
 .gradle/
 .swp
+mongodb/
+

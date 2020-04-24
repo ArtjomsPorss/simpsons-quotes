@@ -1,5 +1,5 @@
-{
-  "data": [{
+[{
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68706374dfa957842f",
       "firstName": "Homer",
       "lastName": "Simpson",
@@ -7,6 +7,7 @@
       "age": 43
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee689509e51682ff8e02",
       "firstName": "Marge",
       "lastName": "Simpson",
@@ -14,6 +15,7 @@
       "age": 40
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68eff3f80413c136f8",
       "firstName": "Lisa",
       "lastName": "Simpson",
@@ -21,6 +23,7 @@
       "age": 10
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee683406c7834ee7cdd8",
       "firstName": "Bart",
       "lastName": "Simpson",
@@ -28,6 +31,7 @@
       "age": 12
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68b4b101bef064bf11",
       "firstName": "Hugo",
       "lastName": "Simpson",
@@ -35,6 +39,7 @@
       "age": 12
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68874eb2fa23678344",
       "firstName": "Ned",
       "lastName": "Flanders",
@@ -42,6 +47,7 @@
       "age": 50
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68efd448eefb265420",
       "firstName": "Rod",
       "lastName": "Flanders",
@@ -49,6 +55,7 @@
       "age": 13
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee68ea392a3947485d41",
       "firstName": "Todd",
       "lastName": "Flanders",
@@ -56,6 +63,7 @@
       "age": 12
     },
     {
+      "_class": "com.artjomporsh.simpsonsquotes.character.SimpsonsCharacter",
       "_id": "59edee682c7acf7bfac7e66b",
       "firstName": "Maude",
       "lastName": "Flanders",
@@ -63,4 +71,3 @@
       "age": 49
     }
   ]
-}

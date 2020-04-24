@@ -22,8 +22,6 @@ public class QuotesController {
 
     @PostMapping("/saveQuote")
     public void saveQuote(@RequestBody Quote quote) {
-//        int hash = quote.hashCode();
-//        quote.set_id(""+hash);
         LOG.info(quote.toString());
         quotesRepository.save(quote);
     }
